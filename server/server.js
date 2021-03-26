@@ -24,3 +24,8 @@ app.post("/login", (req, res) => {
             console.log(err)(err);
         });
 });
+
+
+// REFACTOR LATER!!!
+
+app.listen(3001);
