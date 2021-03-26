@@ -1,12 +1,12 @@
+import React from "react";
+import "./App.css";
+import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
 
-import './App.css';
+const code = new URLSearchParams(window.location.search).get("code");
 
 function App() {
-  return (
-    <div className="App">
-      <h1>app</h1>
-    </div>
-  );
+    return code ? <Dashboard code={code} /> : <Login />;
 }
 
 export default App;
